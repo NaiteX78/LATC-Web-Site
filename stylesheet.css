@@ -7,6 +7,12 @@ header{
   justify-content: space-between;
   align-items: center;
   padding: 0 40px;
+
+  a{
+    outline: none;
+    color: #009688;
+    text-decoration: none;
+  }
 }
 
 .headercenter{
@@ -18,23 +24,32 @@ header{
 .logo{
   width: 250px;
   height: 80px;
-  background-color: #d9d9d9;
+  background-color: none;
 }
 .bloc1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 150px;
   height: 80px;
-  background-color: #d9d9d9;
+  background-color: none;
 }
 .bloc2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 200px;
   height: 80px;
-  background-color: #d9d9d9;
+  background-color: none;
 }
 
 .circle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 60px;
   height: 60px;
-  background-color: #d9d9d9;
+  background-color: none;
   border-radius: 50%;
 }
 
@@ -148,38 +163,65 @@ canvas{
   gap: 50px;
 }
 .hometopbloc{
+  position: relative;
   display: flex;
-  border-bottom: solid #d9d9d9;
   gap: 10px;
   width: max-content;
 }
+.hometopbloc::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(to right, #009688, #4CAF50);
+}
+
 .homebloc1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 300px;
   height: 100px;
-  background-color: #d9d9d9;
   margin-bottom: 10px;
+  h1{
+    font-size: 3em;
+    color: #009688;
+  }
 }
 .homebloc2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 350px;
   height: 100px;
-  background-color: #d9d9d9;
   margin-bottom: 10px;
+  h1{
+    font-size: 3em;
+    color: #4CAF50;
+    filter: contrast(0.4);
+  }
 }
 
 .homelargebloc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 600px;
   height: 600px;
-  background-color: #d9d9d9;
 }
 
 .asidebloc{
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  border-right: solid #d9d9d9;
+  border-right: solid #009688;
   padding: 0 10px;
   margin-top: 200px; /*Provisoire*/
 }
+
 .asidebloc1{
   width: 500px;
   height: 150px;
@@ -197,13 +239,19 @@ canvas{
   display: flex;
   flex-direction: column;
   gap: 100px;
-  border-left: solid #d9d9d9;
+  border-left: solid #009688;
   padding: 0 10px;
 }
 .gamebloc1{
+  display: flex;
+  align-items: center;
   width: 500px;
   height: 250px;
-  background-color: #d9d9d9;
+  h1{
+    margin-left: 10px;
+    color: #9C27B0;
+    font-size: 4.5em;
+  }
 }
 
 .gameAside{
@@ -215,20 +263,33 @@ canvas{
 .gameAsideBloc{
   display: flex;
   flex-direction: column;
-  border-bottom: solid #d9d9d9;
+  border-bottom: solid #009688;
   gap: 10px;
   padding-bottom: 10px;
   align-items: center; 
 }
 .gameAsideBloc1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 300px;
   height: 100px;
-  background-color: #d9d9d9;
+  h1{
+    color: #009688;
+    font-size: 3em;
+  }
 }
 .gameAsideBloc2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 350px;
   height: 100px;
-  background-color: #d9d9d9;
+  h1{
+    color: #4CAF50;
+    filter: contrast(0.4);
+    font-size: 3em;
+  }
 }
 
 .news{
@@ -240,32 +301,48 @@ canvas{
   width: max-content;
 }
 .newsBloc1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 300px;
   height: 100px;
-  background-color: #d9d9d9;
   margin: 0 auto;
   margin-top: 150px;
+  h1{
+    font-size: 3em;
+    color: #009688;
+  }
 }
 
-.newsBloc2{
+.footerBloc2{
+  display: flex;
+  align-items: center;
   width: 250px;
   height: 80px;
-  background-color: #d9d9d9;
 }
 
-.newsBloc3{
+.footerBloc3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 80px;
   height: 80px;
-  background-color: #d9d9d9;
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-left: 30px;
 }
 
-.newsBloc4{
+.footerBloc4{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 300px;
   height: 100px;
-  background-color: #d9d9d9;
+  h1{
+    font-size: 2em;
+    color: #009688;
+  }
 }
-.newsCase{
+.footerCase{
   margin-top: 600px;
   display: flex;
   align-items: start;
@@ -274,7 +351,6 @@ canvas{
 
 .bottomCase {
   margin-top: 50px;
-  padding: 0 40px;
   display: flex;
   align-items: end;
   flex-direction: column;
@@ -287,13 +363,25 @@ canvas{
   justify-content: space-between;
 }
 .bottomBloc1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 263px;
   height: 93px;
-  background-color: #d9d9d9;
+  h1{
+    color: #009688;
+    font-size: 2em;
+  }
 }
 .bottomCircle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: #d9d9d9;
+}
+
+footer{
+  padding: 0 40px;
 }

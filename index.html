@@ -2,32 +2,41 @@
 <html lang="EN">
     <head>
         <meta charset="UTF-8">       
-        <title>LATC Games</title> 
+        <title>Aurora Games</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="img/favicon_io/site.webmanifest">
         <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
         <canvas id="canvas"></canvas>
         <header>
             <div class="headerleft">
-                <!-- No logo at the moment
-                    <img src="img/logo.png" alt="logo" width="250" height="80">
-                -->
-                <div class="logo"></div>
+                <img src="img/Aurora-Game-st-Logo.png" alt="logo" width="175">
             </div>
             <div class="headercenter">
-                <a href="">
-                    <div class="bloc1"></div>
+                <a href="#home">
+                    <div class="bloc1">
+                        <h1>Home</h1>
+                    </div>
                 </a>
-                <a href="">
-                    <div class="bloc1"></div>
+                <a href="#game">
+                    <div class="bloc1">
+                        <h1>Games</h1>
+                    </div>
                 </a>
-                <a href="">
-                    <div class="bloc1"></div>
+                <a href="#news">
+                    <div class="bloc1">
+                        <h1>News</h1>
+                    </div>
                 </a>
             </div>
             <div class="headerright">
                 <a href="">
-                    <div class="bloc2"></div>
+                    <div class="bloc2">
+                        <h1>Account</h1>
+                    </div>
                 </a>
             </div>
         </header>
@@ -40,30 +49,42 @@
             </button>
             <ul>
                 <li>
-                    <a href="">
-                        <div class="circle"></div>
+                    <a href="https://discord.gg/bk8ZEQfSZ6">
+                        <div class="circle">
+                            <img src="img/logo-discord.png" alt="discord-logo" width="110">
+                        </div>
                     </a>
                 </li>
                 <li>
-                    <a href="">
-                        <div class="circle"></div>
+                    <a href="https://instagram.com"> <!--Insta à faire-->
+                        <div class="circle">
+                            <img src="img/Instagram_icon.png" alt="instagram-logo" width="50">
+                        </div>
                     </a>
                 </li>
                 <li>
-                    <a href="">
-                        <div class="circle"></div>
+                    <a href="https://x.com"><!--Twitter à faire-->
+                        <div class="circle">
+                            <img src="img/twitter-logo.png" alt="twitter-logo" width="70">
+                        </div>
                     </a>
                 </li>
             </ul>
         </nav>
         <main>
-            <div class="home">
+            <div id="home" class="home">
                 <article class="homeArticle">
                     <div class="hometopbloc">
-                        <div class="homebloc1"></div>
-                        <div class="homebloc2"></div>
+                        <div class="homebloc1">
+                            <H1>Home</H1>
+                        </div>
+                        <div class="homebloc2">
+                            <h1>View more</h1>
+                        </div>
                     </div>
-                    <div class="homelargebloc"></div>
+                    <div class="homelargebloc">
+                        <img src="img/server-illustration.png" alt="server-illustration" width="800">
+                    </div>
                 </article>
                 <aside class="homeAside">
                     <div class="asidebloc">
@@ -72,37 +93,69 @@
                     </div>    
                 </aside>
             </div>
-            <div class="game">
+            <div id="game" class="game">
                 <article class="gameArticle">
-                    <div class="gamebloc1"></div>
-                    <div class="gamebloc1"></div>
+                    <div class="gamebloc1">
+                        <h1>ONLINE</h1>
+                    </div>
+                    <div class="gamebloc1">
+                        <h1>OFFLINE</h1>
+                    </div>
                 </article>
                 <aside class="gameAside">
                     <div class="gameAsideBloc">
-                        <div class="gameAsideBloc1"></div>
-                        <div class="gameAsideBloc2"></div>
+                        <div class="gameAsideBloc1">
+                            <h1>Games</h1>
+                        </div>
+                        <div class="gameAsideBloc2">
+                            <h1>View more</h1>
+                        </div>
                     </div>
                 </aside>
             </div>
-            <div class="news">
+            <div id="news" class="news">
                 <article class="newsArticle">
-                    <div class="newsBloc1"></div>
-                    <div class="newsCase">
-                        <div class="newsBloc2"></div>
-                        <div class="newsBloc4"></div>
-                        <div class="newsBloc4"></div>
+                    <div class="newsBloc1">
+                        <h1>News</h1>
                     </div>
-                    <div class="newsBloc3"></div>
                 </article>
             </div>
         </main>
         <footer>
+            <div class="footerCase">
+                <div class="footerBloc2">
+                    <img src="img/logo-bg-deleted.png" alt="Aurora-Game-Logo" width="150">
+                </div>
+                <div class="footerBloc4">
+                    <h1>About us</h1>
+                </div>
+                <div class="footerBloc4">
+                    <h1>Helpful links</h1>
+                </div>
+            </div>
+            <div class="footerBloc3">
+                <img src="img/point-dinterrogation-blanc.png" alt="?" width="100">
+            </div>
             <div class="bottomCase">
-                <div class="bottomBloc1"></div>
+                <div class="bottomBloc1">
+                    <h1>Social Networks</h1>
+                </div>
                 <div class="bottomCircleCase">
-                    <div class="bottomCircle"></div>
-                    <div class="bottomCircle"></div>
-                    <div class="bottomCircle"></div>
+                    <a href="https://discord.gg/bk8ZEQfSZ6">    
+                        <div class="bottomCircle">
+                            <img src="img/logo-discord.png" alt="discord-logo" width="110">
+                        </div>
+                    </a>
+                    <a href="https://instagram.com">
+                        <div class="bottomCircle">
+                            <img src="img/Instagram_icon.png" alt="instagram-logo" width="50">
+                        </div>
+                    </a>
+                    <a href="https://x.com">
+                        <div class="bottomCircle">
+                            <img src="img/twitter-logo.png" alt="twitter-logo" width="70">
+                        </div>
+                    </a>
                 </div>
             </div>
         </footer>
