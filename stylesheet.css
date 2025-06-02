@@ -126,6 +126,21 @@ canvas{
   margin-top: 1080px; /*Provisoire*/
   padding: 0 40px;
 }
+@media (max-width: 1200px) {
+  .home{
+    flex-direction: column;
+    gap: 50px;
+  }
+  .asidebloc{
+    display: flex;
+    align-items: end;
+  }
+  .homeAside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .homeArticle{
   display: flex;
   flex-direction: column;
