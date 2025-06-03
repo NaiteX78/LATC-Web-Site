@@ -1,0 +1,65 @@
+#registerForm{
+    display: none;
+}
+
+body{
+    background-color: darkgrey;
+    color: black;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 70vh;
+}
+
+#loginForm, #registerForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toggle-btn {
+    background: none;
+    color: #007bff;
+    text-decoration: underline;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
