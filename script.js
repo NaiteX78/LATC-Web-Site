@@ -174,7 +174,7 @@ const colors = ['#ff0000', '#0000ff'];
 const blackHole = {
     x: canvas.width / 2,
     y: canvas.height / 2,
-    radius: 30,
+    radius: 50,
     color: '#000'
 };
 
